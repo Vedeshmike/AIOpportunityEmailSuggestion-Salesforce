@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="✨ AI Email Suggestion" icon-name="utility:email">
+        <div class="slds-m-around_medium">
+
+            <!-- Generate Email Button -->
+            <lightning-button 
+                label={generateButtonLabel} 
+                variant="brand" 
+                onclick={handleGenerateEmail}
+                disabled={isLoading}>
+            </lightning-button>
+
+            <!-- Loading Spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-m-top_medium slds-align_absolute-center">
+                    <lightning-spinner alternative-text="Generating..." size="small"></lightning-spinner>
+                </div>
+            </template>
+
+            <!-- Email Textarea (Appears when email is generated) -->
+            <template if:true={showEmailEditor}>
+                <lightning-textarea 
+                    label="Generated Email" 
+                    value={emailContent} 
+                    onchange={handleEmailChange}
+                    disabled={isLoading}>
+                    class="custom-textarea"
+                </lightning-textarea>
+
+                <!-- Send Email Button -->
+                <div class="slds-m-top_medium">
+                    <lightning-button 
+                        label="Send Email" 
+                        variant="neutral" 
+                        onclick={handleSendEmail}
+                        disabled={isLoading}>
+                    </lightning-button>
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

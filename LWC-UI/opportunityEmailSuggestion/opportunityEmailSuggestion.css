@@ -1,0 +1,5 @@
+.custom-textarea {
+    height: 200px !important;
+    min-height: 200px !important;
+    resize: vertical; /* Allows user to resize if needed */
+}
