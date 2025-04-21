@@ -59,8 +59,3 @@ AIOpportunityEmailSuggestion-Salesforce is a Lightning Web Component (LWC) built
 3. Add the component to an **Opportunity Lightning Page** via Lightning App Builder.
 
 ---
-
-## 🧠 Example Prompt Logic (if integrated with AI service)
-
-```text
-"Generate a professional follow-up email for {ContactName} regarding {OpportunityName} which is currently in {StageName} stage. Include value props of the associated product: {ProductName}."
