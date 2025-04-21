@@ -1,5 +1,8 @@
 # ✨ AIOpportunityEmailSuggestion-Salesforce
 
+Before Using it Make sure you replace your Gemini API key in the apex class.
+
+
 AIOpportunityEmailSuggestion-Salesforce is a Lightning Web Component (LWC) built for Salesforce that leverages AI to automatically generate personalized emails based on Opportunity, Tasks, Events and Contact data. This tool helps Sales Reps save time, maintain consistency, and enhance communication with leads and customers.
 
 ---
